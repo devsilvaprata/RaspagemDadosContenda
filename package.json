@@ -1,0 +1,15 @@
+{
+  "name": "contenda-raspagem",
+  "version": "1.0.0",
+  "description": "Este programa realiza a raspagem contínua e automatizada das proposições (Indicações e Requerimentos) da **Câmara Municipal de Contenda** e cruza com os **Ofícios de Resposta da Prefeitura Municipal** (Secretarias de Obras, Saúde, Educação, Agropecuária, etc.).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "pdf-parse": "^2.4.5",
+    "tesseract.js": "^7.0.0"
+  }
+}
