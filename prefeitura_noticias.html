@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Prefeitura Municipal de Contenda - PR</title>
+    <meta name="description" content="Portal oficial da Prefeitura Municipal.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://contenda.pr.gov.br/noticias/">
+    <meta property="og:title" content="Notícias" />
+    <meta property="og:description" content="Portal oficial da Prefeitura Municipal." />
+    <meta property="og:image" content="https://contenda.pr.gov.br/img/logo_prefeitura.jpg" />
+    <meta property="og:url" content="https://contenda.pr.gov.br/noticias/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Prefeitura Municipal de Contenda - PR" />
+    <meta property="og:locale" content="pt_BR" />
+    
+    <!-- Google Fonts para a "logo" e o corpo do texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link href="/css/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ======================================= -->
+    <!-- BARRA DO TOPO (EXTREMO TOPO)            -->
+    <!-- ======================================= -->
+    <div class="top-bar py-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Lado Esquerdo: Links de Acesso -->
+            <div class="top-bar-links">
+                <a href="/e-sic" class="top-bar-link">Acesso à Informação</a>
+                <span class="separator">|</span>
+                <a href="#" class="top-bar-link">Mapa do Site</a>
+                <span class="separator">|</span>
+                <span class="me-3 accessibility-label">Acessibilidade:</span>
+                <div class="btn-group" role="group" aria-label="Ajuste de fonte">
+                    <button type="button" class="btn btn-outline-light btn-sm" id="font-decrease" title="Diminuir fonte">A-</button>
+                    <button type="button" class="btn btn-outline-light btn-sm" id="font-reset" title="Restaurar fonte padrão">A</button>
+                    <button type="button" class="btn btn-outline-light btn-sm" id="font-increase" title="Aumentar fonte">A+</button>
+                </div>
+                <button type="button" class="btn btn-outline-light btn-sm ms-3" id="contrast-toggle" title="Alternar contraste">Alto Contraste</button>
+            </div>
+            <!-- Lado Direito: Acessibilidade -->
+            <div class="d-flex align-items-center">
+                <span>Segunda à Sexta, das 8h às 12h e das 13h às 17h | (41) 3625-1212 </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================= -->
+    <!-- HEADER PRINCIPAL (LOGO, MENU, BUSCA)    -->
+    <!-- ======================================= -->
+    <header class="main-header sticky-top bg-white py-3 shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white container">
+            <!-- "Logo" Estilizada -->
+            <a href="/"><img class="logo-header" src="https://contenda.pr.gov.br/img/Logo_Contenda.png"></a>
+
+            <!-- Botão de Menu para Telas Pequenas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Principal e Busca -->
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- Item de Menu Simples: Turismo -->
+                    
+
+                    <!-- Item com Dropdown: A Cidade -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            A Cidade
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/126_Dados-Gerais.html" target="_self">Dados Gerais</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/76_Nossa-Historia.html" target="_self">História</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/77_Hino-e-Simbolos-Municipais.html" target="_self">Hino e Símbolos Municipais</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/181_LOGRADOUROS.html" target="_self">LOGRADOUROS</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/232_MAPAS.html" target="_self">Mapas</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/maps/d/u/2/viewer?hl=pt-BR&amp;ll=-25.712900448100036%2C-49.507594651164155&amp;z=12&amp;mid=1cEwP_siOMnuKN2kFdOy2edM85l4Nkt0q" target="_blank">Turismo</a></li>
+                        </ul>
+                    </li>
+
+                    
+                    <!-- Item com Dropdown: A Prefeitura -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            A Prefeitura
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/gabinete/" target="_self">Gabinete do Prefeito/Vice-Prefeito</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/secretarias/" target="_self">Secretarias Municipais</a></li>
+                            <li><a class="dropdown-item" href="https://leismunicipais.com.br/prefeitura/pr/contenda" target="_blank">Leis Municipais</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/251_PLANO-DE-CONTRATACOES-2026.html" target="_blank">PLANO DE CONTRATAÇÕES 2026</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/242_PLANO-DIRETOR-MUNICIPAL.html" target="_blank">Plano Diretor 2024</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/182_LTCAT.html" target="_blank">LTCAT</a></li>
+                            <li><a class="dropdown-item" href="https://leismunicipais.com.br/prefeitura/pr/contenda" target="_blank">Legislação</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/175_Planos-Municipais.html" target="_blank">Planos Municipais</a></li>
+                            <!--li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/galeria/?id=5" target="_self">Galeria de Prefeitos</a></li-->
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/191_Convenios.html" target="_self">Convênios</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/233_ORGANOGRAMA.html" target="_self">Organograma</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/180_Servidores.html" target="_blank">Servidores</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/189_Protocolo-de-Atendimento-Integral-e-Interinstitucional-de-Crianca-e-Adolescente.html" target="_self">Protocolo de Atendimento Integral e Interinstitucional de Criança e Adolescente</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Item com Dropdown e Sub-Dropdown: Cidadão -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Cidadão
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://contenda.oxy.elotech.com.br/governo-digital/" target="_blank">Governo Digital</a></li>
+                            <li><a class="dropdown-item" href="https://contenda.oxy.elotech.com.br/portaltransparencia/1/dados-abertos" target="_blank">Dados Abertos</a></li>
+                            <li class="dropdown dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cultura e Turismo</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/250_Lei-Paulo-Gustavo.html" target="_self">Lei Paulo Gustavo</a></li>
+                                    <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/licitacoes" target="_blank">Lei Aldir Blanc </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/246_RELACAO-DE-CEPs.html" target="_self">RELAÇÃO DE CEP's</a></li>
+                            <li><a class="dropdown-item" href="https://contenda.oxy.elotech.com.br/portal-contribuinte/inicio" target="_blank">Portal do Contribuinte AUTOATENDIMENTO</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/236_ITBI.html" target="_blank">ITBI</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/235_Carta-de-Servicos.html" target="_self">Carta de Serviços</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/relacao-bolsa-familia" target="_self">Relação Bolsa Família</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/241_REURB.html" target="_self">REURB</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/uploads/arquivo/R99-CONEXAO-CONTENDA--Horario-DU-16.03.2026.pdf" target="_self">Horários de Ônibus</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/licitacao/" target="_self">Licitações</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/247_Plano-Municipal-de-Assistencia-Social.html" target="_self">Plano Municipal de Assistência Social</a></li>
+                            <li><a class="dropdown-item" href="http://www.alistamento.eb.mil.br/" target="_blank">Alistamento Militar</a></li>
+                            <li><a class="dropdown-item" href="http://contenda.pr.gov.br/pagina/171_Conselho-Tutelar.html" target="_blank">Conselho Tutelar</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/210_CMDCA.html" target="_self">CMDCA</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/219_COLETA-SELETIVA-E-RECICLAGEM.html" target="_self">COLETA SELETIVA E RECICLAGEM</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/225_Aprovacao-de-Projeto.html" target="_self">Aprovação de Projeto</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/guia-amarela" target="_self">Guia Amarela</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/uploads/arquivo/CLASSIFICACAO-TEMPO-DE-APRENDER.pdf" target="_self">CLASSIFICAÇÃO TEMPO DE APRENDER</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/226_Caotenda-Campanha-de-Adocao.html" target="_self">Cãotenda - Campanha de Adoção</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/249_2-CONFERENCIA-DA-CIDADE.html" target="_self">2ª CONFERÊNCIA DA CIDADE</a></li>
+                            <li><a class="dropdown-item" href="http://contenda.pr.gov.br/uploads/arquivo/Horario-de-atendimento-por-especialidade.pdf" target="_self">HORÁRIO DE ATENDIMENTO EM UNIDADES DE SAÚDE</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/concursos/" target="_self">Concursos e Processos Seletivos</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/174_Concursos-anteriores-a-2016.html" target="_self">Concursos anteriores a 2016</a></li>
+                            <li><a class="dropdown-item" href="http://www.camaracontenda.pr.gov.br/" target="_blank">Câmara Municipal</a></li>
+                            <li><a class="dropdown-item" href="https://contenda.oxy.elotech.com.br/portaltransparencia/1/perguntas/" target="_blank">Perguntas Frequentes</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/ouvidoria/" target="_self">Ouvidoria</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Item com Dropdown e Sub-Dropdown: Empresas -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Empresas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">INSTITUCIONAL EMPRESAS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=XD0YFZ4cLyU" target="_blank">Versão Português</a></li>
+                                    <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=a87M8BhBJ3k&amp;t=102s" target="_blank">English version</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="https://contenda.simparana.com.br/" target="_self">SIM - SERVIÇO DE INSPEÇÃO MUNICIPAL</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/222_Portal-do-Empreendedor.html" target="_self">Portal do Empreendedor</a></li>
+                            <li><a class="dropdown-item" href="https://contenda.iss.elotech.com.br/home" target="_blank">Nota Fiscal</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/176_Certidoes.html" target="_self">Certidões</a></li>
+                            <li><a class="dropdown-item" href="https://api-v2.citymatch.com.br/resource/0/showcase/22/3995.html" target="_blank">Vitrine de Negócios</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Item com Dropdown: Imprensa -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Imprensa
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/noticias/" target="_self">Notícias</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=oMQSaeVEGQM&amp;t=6s" target="_blank">Video Institucional</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/119_Galeria-de-Fotos.html" target="_self">Galeria de Fotos</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Item de Menu Simples: Portal da Transparência -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://contenda.oxy.elotech.com.br/portaltransparencia/1/" target="_blank">Transparência</a>
+                    </li>
+
+                    <!-- Item com Dropdown: Contatos -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contatos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/ouvidoria/">Ouvidoria</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/pagina/localizacao/">Localização</a></li>
+                            <li><a class="dropdown-item" href="https://www.contenda.pr.gov.br/e-sic/">e-SIC</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Formulário de Busca -->
+                <form action="/busca" method="GET" class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" name="q" placeholder="Buscar..." aria-label="Busca" required>
+                    <button class="btn btn-custom-search" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container"><div class="container my-5">
+    <h1 class="mb-4 pb-2 border-bottom">Notícias</h1>
+    <div class="row">
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="/noticias/detalhes?id=2153" class="text-decoration-none text-dark">
+                    <div style="aspect-ratio: 15/9; overflow: hidden;">
+                        <img src="/prefeitura_app/storage/app/public/uploads/2026/OBRAS-CONTENDA_65efcee7b7f221a-medium.jpg" 
+                             class="card-img-top" alt="Contenda mobiliza equipes após fortes chuvas"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #3498db;">Secretaria de Obras</span>
+                        <h5 class="card-title">Contenda mobiliza equipes após fortes chuvas</h5>
+                        <p class="card-text text-muted small">29/10/2026</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="/noticias/detalhes?id=2152" class="text-decoration-none text-dark">
+                    <div style="aspect-ratio: 15/9; overflow: hidden;">
+                        <img src="/prefeitura_app/storage/app/public/uploads/2026/COPA-BOSCH_65efaf89206cfa6-medium.jpg" 
+                             class="card-img-top" alt="Copa Bosch tem rodada decisiva no domingo (1º)"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #3498db;">Geral</span>
+                        <h5 class="card-title">Copa Bosch tem rodada decisiva no domingo (1º)</h5>
+                        <p class="card-text text-muted small">29/10/2026</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="/noticias/detalhes?id=2151" class="text-decoration-none text-dark">
+                    <div style="aspect-ratio: 15/9; overflow: hidden;">
+                        <img src="/prefeitura_app/storage/app/public/uploads/2026/CASTRACAO-CONTENDA-1_65ee954b2135cb1-medium.jpg" 
+                             class="card-img-top" alt="Contenda realizou 177 castrações gratuitas"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #e67e22;">Secretaria de Indústria, Agricultura e Meio Ambiente</span>
+                        <h5 class="card-title">Contenda realizou 177 castrações gratuitas</h5>
+                        <p class="card-text text-muted small">28/10/2026</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="/noticias/detalhes?id=2150" class="text-decoration-none text-dark">
+                    <div style="aspect-ratio: 15/9; overflow: hidden;">
+                        <img src="/prefeitura_app/storage/app/public/uploads/2026/UBS-CENTRO-SOCIAL_65ee77dc43e9cc2-medium.jpg" 
+                             class="card-img-top" alt="Contenda amplia acesso ao Implanon pelo SUS"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #2ecc71;">Secretaria de Saúde</span>
+                        <h5 class="card-title">Contenda amplia acesso ao Implanon pelo SUS</h5>
+                        <p class="card-text text-muted small">28/10/2026</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="/noticias/detalhes?id=2149" class="text-decoration-none text-dark">
+                    <div style="aspect-ratio: 15/9; overflow: hidden;">
+                        <img src="/prefeitura_app/storage/app/public/uploads/2026/DIA-DO-PROFESSOR_65ed6f0017961d4-medium.jpg" 
+                             class="card-img-top" alt="Contenda homenageia profissionais da educação"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #f1c40f;">Secretaria de Educação, Cultura, Esporte e Turismo</span>
+                        <h5 class="card-title">Contenda homenageia profissionais da educação</h5>
+                        <p class="card-text text-muted small">27/10/2026</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="/noticias/detalhes?id=2148" class="text-decoration-none text-dark">
+                    <div style="aspect-ratio: 15/9; overflow: hidden;">
+                        <img src="/prefeitura_app/storage/app/public/uploads/2026/CARRINHO-ROLIMA_65ed25594964269-medium.jpg" 
+                             class="card-img-top" alt="Contenda se prepara para o 3º GP de Rolimã"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #3498db;">Assessoria de Comunicação</span>
+                        <h5 class="card-title">Contenda se prepara para o 3º GP de Rolimã</h5>
+                        <p class="card-text text-muted small">27/10/2026</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="/noticias/detalhes?id=2147" class="text-decoration-none text-dark">
+                    <div style="aspect-ratio: 15/9; overflow: hidden;">
+                        <img src="/prefeitura_app/storage/app/public/uploads/2026/ALAGAMENTO-CONTENDA_65ec16fbc9db0c8.jpeg" 
+                             class="card-img-top" alt="Contenda registrou 32 ocorrências após chuvas"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #3498db;">Assessoria de Comunicação</span>
+                        <h5 class="card-title">Contenda registrou 32 ocorrências após chuvas</h5>
+                        <p class="card-text text-muted small">26/10/2026</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="/noticias/detalhes?id=2146" class="text-decoration-none text-dark">
+                    <div style="aspect-ratio: 15/9; overflow: hidden;">
+                        <img src="/prefeitura_app/storage/app/public/uploads/2026/FESTA-ESCOLA_65ebde768adf380-medium.jpg" 
+                             class="card-img-top" alt="Projeto desperta potencial empreendedor dos alunos"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #3498db;">Assessoria de Comunicação</span>
+                        <h5 class="card-title">Projeto desperta potencial empreendedor dos alunos</h5>
+                        <p class="card-text text-muted small">26/10/2026</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="/noticias/detalhes?id=2145" class="text-decoration-none text-dark">
+                    <div style="aspect-ratio: 15/9; overflow: hidden;">
+                        <img src="/prefeitura_app/storage/app/public/uploads/2026/SEMINARIO-BULLYING_65e70a6d4fb0efd-medium.jpg" 
+                             class="card-img-top" alt="Bullying foi tema de Seminário em Contenda"
+                             style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #f1c40f;">Secretaria de Educação, Cultura, Esporte e Turismo</span>
+                        <h5 class="card-title">Bullying foi tema de Seminário em Contenda</h5>
+                        <p class="card-text text-muted small">22/10/2026</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    <div class="mt-5">
+        <nav aria-label="Navegação de página"><ul class="pagination justify-content-center"><li class="page-item disabled"><span class="page-link"><<</span></li><li class="page-item disabled"><span class="page-link"><</span></li><li class="page-item active" aria-current="page"><span class="page-link">1</span></li><li class="page-item"><a class="page-link" href="/noticias?page=2">2</a></li><li class="page-item"><a class="page-link" href="/noticias?page=3">3</a></li><li class="page-item"><a class="page-link" href="/noticias?page=4">4</a></li><li class="page-item disabled"><span class="page-link">...</span></li><li class="page-item"><a class="page-link" href="/noticias?page=221">221</a></li><li class="page-item"><a class="page-link" href="/noticias?page=2">></a></li><li class="page-item"><a class="page-link" href="/noticias?page=221">>></a></li></ul></nav>    </div>
+</div>
+</main>
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- Coluna Principal com Logo e Redes Sociais -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Prefeitura Municipal de Contenda - PR</h6>
+                    <p>
+                        Um canal de comunicação e transparência com o cidadão.
+                    </p>
+                    <div>
+                        <!-- Links para redes sociais -->
+                        <a href="https://www.facebook.com/prefeituradecontenda" target="_blank" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/prefeituradecontenda/" class="btn btn-outline-light btn-floating m-1" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@prefeituradecontenda" class="btn btn-outline-light btn-floating m-1" target="_blank" role="button"><i class="fab fa-youtube"></i></a>
+                        <!--a href="#" class="btn btn-outline-light btn-floating m-1" target="_blank" role="button"><i class="fab fa-twitter"></i></a-->
+                    </div>
+                </div>
+
+                <!-- Coluna de Links Úteis -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Acesso Rápido</h6>
+                    <p><a href="/licitacoes" class="text-reset">Licitações</a></p>
+                    <p><a href="/noticias" class="text-reset">Notícias</a></p>
+                    <p><a href="/esic/" class="text-reset">e-SIC</a></p>
+                    <p><a href="/ouvidoria" class="text-reset">Ouvidoria</a></p>
+                </div>
+
+                <!-- Coluna de Contato -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                    <p><i class="fas fa-home me-3"></i> Avenida João Franco 400 - Centro CEP 83730-000 Contenda - PR</p>
+                    <p><i class="fas fa-envelope me-3"></i> gabinete@contenda.pr.gov.br</p>
+                    <p><i class="fas fa-phone me-3"></i> (41) 3625-1212</p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Atendimento ao público</h6>
+                    <p><i class="fas fa-clock me-3"></i> De segunda a sexta-feira, das 08:00hs às 12:00hs e das 13:00hs às 17:00hs</p> 
+                </div>
+            </div>
+        </div>
+        
+        <!-- Seção de Copyright e Versão -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2026 Prefeitura Municipal de Contenda - PR. Todos os direitos reservados.
+            <small></small>
+        </div>
+    </footer>
+
+    <!-- ========================================================== -->
+    <!-- BARRA DE CONSENTIMENTO LGPD/COOKIES  -->
+    <!-- ========================================================== -->
+    <div id="cookie-consent-bar" class="cookie-consent-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="cookie-text mb-0">
+                Usamos cookies para melhorar a sua navegação. Ao continuar, você concorda com nossas 
+                <a href="/politica-de-privacidade">Políticas de Cookies e Termos de Uso</a>.
+            </p>
+            <button id="accept-cookies" class="btn btn-primary btn-sm">Aceitar e Fechar</button>
+        </div>
+    </div>
+    <!-- ========================================================== -->
+
+    <script src="/js/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+    
+    <!-- VLIBRAS -->
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
